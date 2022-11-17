@@ -1,0 +1,39 @@
+.overlay-one {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 275px;
+}
+
+.overlay-two {
+    position: absolute;
+    width: 212px;
+    margin: 0 auto;
+    height: 354px;
+}
+
+.overlay-one video {
+    width: 100%;
+    display: block;
+}
+
+
+.overlay-one:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: -2px;
+    right: -5px;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay-two:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    }

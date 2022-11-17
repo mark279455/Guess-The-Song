@@ -22,7 +22,7 @@
                 <p>Welcome to the game.....</p>
                 <p>blah blah blah</p>
             </div>
-            <div>
+            <div id="instructions">
                 <!-- Trigger/Open The Modal -->
                 <button id="instructions_modal_btn">Instructions</button>
 
@@ -37,25 +37,27 @@
                 </div>
             </div>
         </div>
-        <div id="timerscore">
-            <div id="timer" class="timerscore">timer</div>
-            <div id="score" class="timerscore">score</div>
-        </div>
 
         <div id="info">
             <p>info</p>
             <button id="startbutton">start</button>
         </div>
+
+        <div id="timerscore">
+            <div id="timer" class="timerscore">timer</div>
+            <div id="score" class="timerscore">score</div>
+        </div>
+
         <div id="answer">
             <div id="answerform">
-                <form action="#">
+                <form id="guessactions" action="#" >
                     <label for="answer"></label>
-                    <input type="text" id="answer" name="answer" value="Your Guess">
-                    <input type="submit" value="Submit">
+                    <textarea class="guesstext" rows="4" cols="35" name="answer" value="Your Guess" form="guessactions"></textarea>
+                    <!-- <input class="guesstext" type="text" id="answer" name="answer" value="Your Guess"> -->
+                    <input class="submitguess" type="submit" value="Guess">
                 </form>
             </div>
         </div>
-
     </section>
 
     <footer>
